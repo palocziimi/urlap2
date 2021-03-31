@@ -1,0 +1,16 @@
+*{
+   font-family: Calibri, monospace;
+   color: rgb(68, 68, 68);
+}
+body{
+   margin: 0;
+   padding: 0;
+}
+#main{
+   margin: 10px;
+   height: max-content;
+   width: max-content;
+}
+span{
+   color: red;
+}
