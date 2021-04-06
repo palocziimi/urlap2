@@ -11,44 +11,64 @@
    <div id="main">
 
       <h1>Szállítási cím módosítása</h1>
-      <div id="form">
-         <form>
-            <div id="name">
-               <label for="name">Név <span>*</span></label>
-               <input type="text" name="name" id="name" required>
-            </div>
-            <div id="tel">
-               <label for="36">Telefonszám <span>*</span></label>
-               <select name="36" id="36">
-                  <option value="36">36</option>
-               </select>
-               <input type="tel" name="tel" id="tel" required>
-            </div>
-            <div id="irsz">
-               <label for="irsz">Irányítószám <span>*</span></label>
-               <input type="number" name="irsz" id="irsz" required>
-            </div>
-            <div id="city">
-               <label for="city">Város <span>*</span></label>
-               <select name="city" id="city">
-                  <option value="city">Debrecen</option>
-               </select>
-            </div>
-            <div id="country">
-               <label for="country">Ország <span>*</span></label>
-               <select name="country" id="country">
-                  <option value="country">Magyarország</option>
-               </select>
-            </div>
-            <div id="cim">
-               <label for="cim">Cím <span>*</span></label>
-               <input type="text" name="cim" id="cim" required><br>
-            </div>
-            <div id="submit">
-               <input type="submit" value="Mentés">
-            </div>
-         </form>
-      </div>
+      <form>
+         <table class="obj" id="first">
+            <tr>
+               <td id="nev">
+                  <label for="name">Név <span>*</span></label><br>
+                  <input type="text" name="name" id="name" required autofocus>
+               </td>
+
+               <td id="phone">
+                  <label for="orsz">Telefonszám <span>*</span></label><br>
+                  <select name="orsz" id="orsz">
+                     <option value="36">36</option>
+                  </select>
+                  <input type="tel" name="tel" id="tel" required>
+               </td>
+            </tr>
+         </table>
+
+         <table class="obj">
+            <tr>
+               <td class="egyik">
+                  <label for="irsz">Irányítószám <span>*</span></label><br>
+                  <input type="number" name="irsz" id="irsz" min="1000" max="9999" required>
+               </td>
+
+               <td class="masik">
+                  <label for="city">Város <span>*</span></label><br>
+                  <select name="city" id="city">
+                     <option value="city">Debrecen</option>
+                  </select>
+               </td>
+            </tr>
+         </table>
+
+         <table class="obj">
+            <tr>
+               <td class="egyik">
+                  <label for="country">Ország <span>*</span></label><br>
+                  <select name="country" id="country">
+                     <option value="country">Magyarország</option>
+                  </select>
+               </td>
+
+               <td class="masik">
+                  <label for="cim">Cím <span>*</span></label><br>
+                  <input type="text" name="cim" id="cim" required><br>
+               </td>
+            </tr>
+         </table>
+
+         <table class="obj">
+            <tr>
+               <td id="sumbit" colspan="2">
+                  <input type="submit" value="Mentés" id="mentes">
+               </td>
+            </tr>
+         </table>
+      </form>
    </div>
 </body>
 
